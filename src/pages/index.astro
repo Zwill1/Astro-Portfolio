@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import Nav from '../components/Nav.astro';
+import Navigation from '../components/Navigation.jsx';
 ---
 
 <Layout title="Home title tag">
 	<main>
-		<Nav />
+		<!-- Requires the client load for any reactJS -->
+		<Navigation client:load />
 		<p class="text-center text-red-800 bg-gray-50">hello</p>
 	</main>
 </Layout>
