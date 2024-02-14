@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+// import Card from '../components/Card.astro';
 import Navigation from '../components/Navigation.jsx';
+import ProjectCard from '../components/ProjectCard.astro';
 ---
 
 <Layout title="Home title tag">
@@ -10,12 +11,94 @@ import Navigation from '../components/Navigation.jsx';
 		<Navigation client:load />
 		<p class="text-center">Skills</p>
 
-		<!-- Website cards for projects -->
-		<section class="lg:flex w-full">
-			<div class="w-full lg:w-3/12 text-center">Card 1</div>
-			<div class="w-full lg:w-3/12 text-center">Card 2</div>
-			<div class="w-full lg:w-3/12 text-center">Card 3</div>
-			<div class="w-full lg:w-3/12 text-center">Card 4</div>
+		<!-- Website cards for projects DESKTOP -->
+		<section class="hidden lg:block lg:flex w-full">
+			<div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+				<ProjectCard
+				image="https://placehold.co/600x400"
+				imgAlt='Project 1'
+				tags="React, PHP, HTML5, CSS"
+				title='React Project 1'
+				url='http://localhost:4321/'
+				codeURL='https://github.com/Zwill1' 
+				/>
+			</div>
+			<div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+				<ProjectCard
+				image="https://placehold.co/600x400"
+				imgAlt='Project 1'
+				tags="React, PHP, HTML5, CSS"
+				title='React Project 2'
+				url='http://localhost:4321/'
+				codeURL='https://github.com/Zwill1' 
+				/>
+			</div>
+			<div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+				<ProjectCard
+				image="https://placehold.co/600x400"
+				imgAlt='Project 1'
+				tags="React, PHP, HTML5, CSS"
+				title='React Project 3'
+				url='http://localhost:4321/'
+				codeURL='https://github.com/Zwill1' 
+				/>
+			</div>
+			<div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+				<ProjectCard
+				image="https://placehold.co/600x400"
+				imgAlt='Project 1'
+				tags="React, PHP, HTML5, CSS"
+				title='React Project 4'
+				url='http://localhost:4321/'
+				codeURL='https://github.com/Zwill1' 
+				/>
+			</div>
+		</section>
+
+		<!-- Website cards for projects MOBILE -->
+		<section class="md:flex w-full lg:hidden">
+			<div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+				<ProjectCard
+				image="https://placehold.co/600x400"
+				imgAlt='Project 1'
+				tags="React, PHP, HTML5, CSS"
+				title='React Project 1'
+				url='http://localhost:4321/'
+				codeURL='https://github.com/Zwill1' 
+				/>
+			</div>
+			<div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+				<ProjectCard
+				image="https://placehold.co/600x400"
+				imgAlt='Project 1'
+				tags="React, PHP, HTML5, CSS"
+				title='React Project 2'
+				url='http://localhost:4321/'
+				codeURL='https://github.com/Zwill1' 
+				/>
+			</div>
+		</section>
+		<section class="md:flex w-full lg:hidden">
+			<div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+				<ProjectCard
+				image="https://placehold.co/600x400"
+				imgAlt='Project 1'
+				tags="React, PHP, HTML5, CSS"
+				title='React Project 3'
+				url='http://localhost:4321/'
+				codeURL='https://github.com/Zwill1' 
+				/>
+			</div>
+			<div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+				<ProjectCard
+				image="https://placehold.co/600x400"
+				imgAlt='Project 1'
+				tags="React, PHP, HTML5, CSS"
+				title='React Project 4'
+				url='http://localhost:4321/'
+				codeURL='https://github.com/Zwill1' 
+				/>
+			</div>
 		</section>
 	</main>
 </Layout>
