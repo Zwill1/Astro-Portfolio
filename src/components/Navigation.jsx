@@ -1,7 +1,4 @@
-import React, { useState } from 'react'
-
-// import MenuIcon from "@mui/icons-material/Menu";
-// import CloseIcon from "@mui/icons-material/Close";
+import { useState } from "preact/hooks";
 
 function Navigation() {
 
@@ -52,37 +49,41 @@ function Navigation() {
           </div>
           <div className="lg:hidden" onClick={handleClick}>
             {!nav ? (
-            //   <MenuIcon className="w-5" />
-            <div className="w-5">Menu Icon</div>
+              // Making a hamburger menu with CSS ONLY
+            <>
+              <div style="width: 35px; height: 3px; background-color: white; margin: 6px 0;"></div>
+              <div style="width: 35px; height: 3px; background-color: white; margin: 6px 0;"></div>
+              <div style="width: 35px; height: 3px; background-color: white; margin: 6px 0;"></div>
+            </>
             ) : (
-            //   <CloseIcon className="w-5" />
-            <div className="w-5">Close Icon</div>
+              // Making a close menu with CSS ONLY
+            <div style="font-size: 35px; color: white; margin: 6px 0;">X</div>
             )}
           </div>
         </div>
         <ul
           className={
-            !nav ? "hidden" : "absolute bg-zinc-200 w-full lg:hidden z-50"
+            !nav ? "hidden" : "absolute bg-black w-full lg:hidden z-50"
           }
         >
         <>
-            <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4">
-            <a href="/" onClick={handleClose}>
+            <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+            <a href="/" class="block" onClick={handleClose}>
                 Home
             </a>
             </li>
-            <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4">
-            <a href="login" onClick={handleClose}>
+            <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+            <a href="login" class="block" onClick={handleClose}>
                 Portfolio
             </a>
             </li>
-            <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4">
-            <a href="login" onClick={handleClose}>
+            <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+            <a href="login" class="block" onClick={handleClose}>
                 Education
             </a>
             </li>
-            <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4">
-            <a href="login" onClick={handleClose}>
+            <li className="border-b-2 border-zinc-300 w-10/12 mx-auto pt-4 pb-4 text-center">
+            <a href="login" class="block" onClick={handleClose}>
                 Contact
             </a>
             </li>
