@@ -1,0 +1,15 @@
+---
+interface props {
+    body: string,
+    year: string,
+}
+
+const {body, year} = Astro.props
+---
+
+<p>
+    {body}
+</p>
+<p class="font-bold italic">
+    ~{year}
+</p>
