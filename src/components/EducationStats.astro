@@ -1,15 +1,18 @@
 ---
 interface props {
+    school: string,
     body: string,
     year: string,
 }
 
-const {body, year} = Astro.props
+const {school, body, year} = Astro.props
 ---
-
-<p>
+<p class="font-bold text-2xl italic leading-10">
+    {school}
+</p>
+<p class="leading-2">
     {body}
 </p>
-<p class="font-bold italic">
+<p class="font-bold italic leading-8">
     ~{year}
 </p>
