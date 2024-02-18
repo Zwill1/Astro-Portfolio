@@ -32,17 +32,17 @@ function Navigation() {
                     </a>
                   </li>
                   <li className="p-4">
-                    <a href="login">
+                    <a href="/portfolio">
                       Portfolio
                     </a>
                   </li>
                   <li className="p-4">
-                    <a href="login">
+                    <a href="/education">
                       Education
                     </a>
                   </li>
                   <li className="p-4">
-                    <a href="login">
+                    <a href="/contact">
                       Contact
                     </a>
                   </li>
