@@ -5,5 +5,8 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), preact()]
+  integrations: [tailwind(), preact()],
+  
+  //switching off dev source data astro element in dev mode
+  devToolbar: { enabled: false },
 });

@@ -1,20 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.jsx';
-import ProjectCardSection from '../ui/ProjectCardSection.astro';
-import SkillSection from '../ui/SkillSection.astro';
-import EducationSection from '../ui/EducationSection.astro';
-import Footer from '../ui/Footer.astro';
+import ProjectCardSection from '../ui/Home/ProjectCardSection.astro';
+import SkillSection from '../ui/Home/SkillSection.astro';
+import EducationSection from '../ui/Home/EducationSection.astro';
 ---
 
 <Layout title="Home title tag">
 	<main>
-		<!-- Requires the client load for any reactJS or state used components -->
-		<Navigation client:load />
 		<ProjectCardSection />
 		<SkillSection />
 		<EducationSection />
-		<Footer />
 	</main>
 </Layout>
 

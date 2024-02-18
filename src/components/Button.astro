@@ -1,0 +1,16 @@
+---
+
+interface Props {
+    link: string,
+    name: string,
+    bgColor: string,
+    width: string,
+}
+
+const {link, name, bgColor, width} = Astro.props
+
+---
+
+<a href={link} class={bgColor + " " + width + " block p-1"}>
+    {name}
+</a>
