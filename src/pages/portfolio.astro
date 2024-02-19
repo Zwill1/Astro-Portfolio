@@ -1,12 +1,155 @@
 ---
+import ProjectCardSample from '../components/ProjectCardSample.astro';
 import Layout from '../layouts/Layout.astro';
 import DevCardSection from '../ui/Portfolio/DevCardSection.astro';
 ---
 
 <Layout title="Portfolio page">
+
     <DevCardSection title="Front-End Dev Projects" />
 
     <DevCardSection title="Back-End Dev Projects" />
 
     <DevCardSection title="Graphic Design" />
+
+    <!-- Start "Older Prjects" -->
+    <section class="mt-10 mb-10">
+        <h2 class="text-center text-4xl font-bold uppercase">Older Projects</h2>
+    </section>
+
+    <!-- Website cards for projects DESKTOP -->
+    <!-- Row 1 -->
+    <section class="hidden lg:block lg:flex w-full">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 1'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 1'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="/images/olderProjects/blackIce/blackice-main-600x400.jpg"
+            imgAlt='Black Ice Extreme Menthol Website'
+            tags="HTML, CSS, PHP, Basic SEO"
+            title='Black Ice Extreme Menthol'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="/images/olderProjects/efusion/efusion-0-600x400.jpg"
+            imgAlt='E-fusion Premium E liquid Website'
+            tags="HTML, CSS, PHP, Basic SEO"
+            title='E-fusion Premium E liquid'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+    </section>
+
+    <!-- Row 2 -->
+    <section class="hidden lg:block lg:flex w-full">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="/images/olderProjects/typherionLabs/tylabs-0-600x400.jpg"
+            imgAlt='Typherion Labs Website'
+            tags="HMTL, CSS, PHP, MySQL, Basic SEO, Email"
+            title='Typherion Labs'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 1'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 1'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 1'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+    </section>
+
+    <!-- Website cards for projects MOBILE -->
+    <section class="md:flex w-full lg:hidden">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 1'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 1'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+    </section>
+    <section class="md:flex w-full lg:hidden">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 3'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Project 1'
+            tags="React, PHP, HTML5, CSS"
+            title='React Project 4'
+            url='http://localhost:4321/'
+            codeURL='https://github.com/Zwill1' 
+            />
+        </div>
+    </section>
+    <!-- End Older Prjects -->    
 </Layout>
