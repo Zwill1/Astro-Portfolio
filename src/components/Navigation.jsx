@@ -19,7 +19,7 @@ function Navigation() {
                 href="/"
                 className="font-bold mr-4 text-2xl sm:text-3xl md:text-4xl uppercase"
               >
-                Logo
+                Visuals Plus
               </a>
             </h1>
           </div>
