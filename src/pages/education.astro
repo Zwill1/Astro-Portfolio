@@ -1,7 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SkillSection from '../ui/Home/SkillSection.astro';
 ---
 
 <Layout title="Education page">
-    <p>Education</p>
+
+    <main>
+        <section class="mt-10 mb-10">
+            <h2 class="uppercase text-4xl text-center font-bold">Educational Background</h2>
+        </section>
+        <section class="lg:flex w-full mx-auto lg:w-11/12 xl:w-10/12">
+            <div class="w-full lg:w-4/12 text-center">
+                <img src="/images/background/CATO.jpg" alt="CENTRE FOR ARTS AND TECHNOLOGY" />
+            </div>
+            <div class="w-full lg:w-8/12 text-center pl-10 pr-10">
+                <h3 class="uppercase font-semibold text-center text-2xl">CENTRE FOR ARTS AND TECHNOLOGY</h3>
+                <p class="text-left">The Graphic and Digital Media Design course consisted of an 18 month course covering all the fundamentals of graphic design, branding, search engine optimization, video editing, WordPress , front-end development and some back-end php databasing. Upon graduating, I moved to Calgary, Alberta to pursue my career in the web and design industry to focus on becoming a Full Stack Developer.</p>
+            </div>
+        </section>
+        <SkillSection />
+    </main>
+
 </Layout>
