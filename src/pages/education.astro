@@ -2,32 +2,27 @@
 import EducationStats from '../components/EducationStats.astro';
 import Layout from '../layouts/Layout.astro';
 import SkillSection from '../ui/Home/SkillSection.astro';
+import Course from '../components/Course.astro';
 ---
 
 <Layout title="Education page">
 
     <main>
-        <section class="mt-20 mb-20">
+        <section class="mt-20 mb-10">
             <h2 class="uppercase text-4xl text-center font-bold">Educational Background</h2>
         </section>
         <section class="lg:flex w-full mx-auto lg:w-11/12 xl:w-10/12 mb-10">
-            <div class="w-full lg:w-4/12 text-center p-8 md:p-8 lg:p-2">
-                <img src="/images/background/universityOfCalgary.jpg" alt="University of Calgary Logo" />
-            </div>
-            <div class="w-full lg:w-8/12 text-center pl-10 pr-10">
+            <div class="w-full lg:w-6/12 text-center p-5 md:p-10">
+                <img src="/images/background/universityOfCalgary.jpg" class="w-1/2 mx-auto" alt="University of Calgary Logo" />
                 <h3 class="uppercase font-semibold text-center text-2xl">University of Calgary</h3>
                 <p class="text-center font-semibold">Course: <span class="italic font-light">Certificate in .NET Application Development  / Certificate in Front-End Web Development </span></p>
-                <p class="text-left">Took the .NET Application Development certificate at the University of Calgary that covered C#, Python, Windows Forms, ASP.NET, .NET, ADO.NET, Relational Database, Azure DB, Razor pages and MVP patterns. Learned software/Agile methods, Front-End Development with advanced Javascript and experience in ReactJS.</p>
+                <p class="text-left pt-1">Took the .NET Application Development certificate at the University of Calgary that covered C#, Python, Windows Forms, ASP.NET, .NET, ADO.NET, Relational Database, Azure DB, Razor pages and MVP patterns. Learned software/Agile methods, Front-End Development with advanced Javascript and experience in ReactJS.</p>
             </div>
-        </section>
-        <section class="lg:flex w-full mx-auto lg:w-11/12 xl:w-10/12 mb-20">
-            <div class="w-full lg:w-4/12 text-center p-8 md:p-8 lg:p-2">
-                <img src="/images/background/CATO.jpg" alt="CENTRE FOR ARTS AND TECHNOLOGY logo" />
-            </div>
-            <div class="w-full lg:w-8/12 text-center pl-10 pr-10">
+            <div class="w-full lg:w-6/12 text-center p-5 md:p-10">
+                <img src="/images/background/CATO.jpg" class="w-1/2 mx-auto" alt="CENTRE FOR ARTS AND TECHNOLOGY logo" />
                 <h3 class="uppercase font-semibold text-center text-2xl">CENTRE FOR ARTS AND TECHNOLOGY</h3>
                 <p class="text-center font-semibold">Course: <span class="italic font-light">Graphic and Digital Media Design</span></p>
-                <p class="text-left">The Graphic and Digital Media Design course consisted of an 18 month course covering all the fundamentals of Graphic Design, Branding, Search Engine Optimization, Video Editing, WordPress , Front-End Development and some Back-End PHP Databasing. Upon graduating, I moved to Calgary, Alberta to pursue my career in the web and design industry to focus on becoming a Full Stack Developer.</p>
+                <p class="text-left pt-1">The Graphic and Digital Media Design course consisted of an 18 month course covering all the fundamentals of Graphic Design, Branding, Search Engine Optimization, Video Editing, WordPress , Front-End Development and some Back-End PHP Databasing. Upon graduating, I moved to Calgary, Alberta to pursue my career in the web and design industry to focus on becoming a Full Stack Developer.</p>
             </div>
         </section>
         <section class="bg-[#f4f4f4] pt-5 pb-5 shadow-xl">
@@ -38,6 +33,47 @@ import SkillSection from '../ui/Home/SkillSection.astro';
             <section class="w-full text-center p-4">
                 <EducationStats school="Centre for Arts and Technology" body="Achieved top of my class in most of the subjects offered in the Graphic and Digital Media Design course. Learn more about my education and background." year="2012" />
             </section>
+        </section>
+        <section class="pt-5 pb-5">
+            <div class="mt-20 mb-10">
+                <h2 class="uppercase text-4xl text-center font-bold">Additional Learning</h2>
+            </div>
+            <div class="mt-5 mb-5">
+                <p class="uppercase text-3xl text-center font-light">Udemy Courses - Completed</p>
+            </div>
+            <div>
+                <Course title="The Web Developer Bootcamp" author="Colt Steele" />    
+                <Course title="Agile Crash Course: Agile Project Management; Agile Delivery" author="Mauricio Rubio" />    
+                <Course title="Marketing Automation & Email Marketing for Beginners" author="Mauricio Rubio" />                
+            </div>
+            <div class="mt-5 mb-5">
+                <p class="uppercase text-3xl text-center font-light">Udemy Courses - Ongoing</p>
+            </div>
+        </section>
+        <section class="w-full lg:flex">
+            <div class="w-full lg:w-6/12">
+                <Course title='The Complete JavaScript Course 2020:' author='Jonas Schmedtmann' />
+                <Course title='Mega Digital Marketing Course A-Z' author='Pouya Eti' />
+                <Course title='Java Programming Masterclass for Software Developers' author='Tim Buchalka' />
+                <Course title='Node.js, Express, MongoDB & More' author='Jonas Schmedtmann' />
+                <Course title='Modern React with Redux [2020 Update]' author='Stephen Grider' />
+                <Course title='Complete WordPress Theme & Plugin Development' author='Zac Gordon' />
+                <Course title='The Complete ASP.NET MVC 5 Course' author='Mosh Hamedani' />
+                <Course title='Object Oriented PHP & MVC' author='Brad Traversy' />
+                <Course title='Gatsby JS | Gatsby with Wordpress as a headless CMS [2020]' author='Thomas Weibenfalk' />
+                <Course title='Code with Node: Learn by Doing' author='Ian Schoonover' />
+            </div>
+            <div class="w-full lg:w-6/12">
+                <Course title='The Complete Junior to Senior Web Developer' author='Andrei Neagoie' />
+                <Course title='Code with Node' author='Ian Schoonover' />
+                <Course title='React Native - The Practical Guide [2020 Edition]' author='Maximilian Schwarzmüller' />
+                <Course title='Vue JS - The Complete Guide (incl. Vue Router & Vuex)' author='Maximilian Schwarzmüller' />
+                <Course title='Python and Django Full Stack Web Developer' author='Jose Portilla' />
+                <Course title='Angular' author='Maximilian Schwarzmüller' />
+                <Course title='Learn to build an e-commerce app with .Net Core and Angular' author='Neil Cummings' />
+                <Course title='Practical PHP: Master the Basics and Code Dynamic Websites' author='Brad Hussey' />
+                <Course title='JavaScript Algorithms and Data Structures Masterclass' author='Colt Steele' />
+            </div>
         </section>
     </main>
 
