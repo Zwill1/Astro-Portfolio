@@ -1,14 +1,203 @@
 ---
 import ProjectCardSample from '../components/ProjectCardSample.astro';
 import Layout from '../layouts/Layout.astro';
-import DevCardSection from '../ui/Portfolio/DevCardSection.astro';
 ---
 
 <Layout title="Portfolio page">
 
-    <DevCardSection title="Front-End Dev Projects" />
+    <!-- Start "Front-End Dev Projects" -->
+    <section class="mt-10 mb-10">
+        <h2 class="text-center text-4xl font-bold uppercase">Front-End Dev Projects</h2>
+    </section>
+    <!-- Website cards for projects DESKTOP -->
+    <!-- Row 1 -->
+    <section class="hidden lg:block lg:flex w-full xl:w-10/12 mx-auto">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Hot Shots Vapor Express - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Hot Shots Vapor Express - Logo'
+            url='http://www.hotshotsvapor.ca/'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Typherion Labs - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Typherion Labs'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='E-fusion Premium E Liquid - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='E-fusion Premium E Liquid'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Black Ice Extreme Menthol Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Black Ice Extreme Menthol'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+    </section>
 
-    <DevCardSection title="Back-End Dev Projects" />
+    <!-- Website cards for projects MOBILE -->
+    <section class="md:flex w-full lg:hidden">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Hot Shots Vapor Express - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Hot Shots Vapor Express - Logo'
+            url='http://www.hotshotsvapor.ca/'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Typherion Labs - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Typherion Labs'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+    </section>
+    <section class="md:flex w-full lg:hidden">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='E-fusion Premium E Liquid - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='E-fusion Premium E Liquid'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Black Ice Extreme Menthol Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Black Ice Extreme Menthol'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+    </section>
+    <!-- End Website cards for projects MOBILE -->
+    <!-- End Front-End Dev Projects --> 
+
+    <!-- Start "Back-End Dev Projects" -->
+    <section class="mt-10 mb-10">
+        <h2 class="text-center text-4xl font-bold uppercase">Back-End Dev Projects</h2>
+    </section>
+    <!-- Website cards for projects DESKTOP -->
+    <!-- Row 1 -->
+    <section class="hidden lg:block lg:flex w-full xl:w-10/12 mx-auto">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Hot Shots Vapor Express - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Hot Shots Vapor Express - Logo'
+            url='http://www.hotshotsvapor.ca/'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Typherion Labs - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Typherion Labs'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='E-fusion Premium E Liquid - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='E-fusion Premium E Liquid'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Black Ice Extreme Menthol Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Black Ice Extreme Menthol'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+    </section>
+
+    <!-- Website cards for projects MOBILE -->
+    <section class="md:flex w-full lg:hidden">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Hot Shots Vapor Express - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Hot Shots Vapor Express - Logo'
+            url='http://www.hotshotsvapor.ca/'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Typherion Labs - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Typherion Labs'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+    </section>
+    <section class="md:flex w-full lg:hidden">
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='E-fusion Premium E Liquid - Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='E-fusion Premium E Liquid'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+        <div class="w-full md:w-6/12 lg:w-3/12 text-center p-6">
+            <ProjectCardSample
+            image="https://placehold.co/600x400"
+            imgAlt='Black Ice Extreme Menthol Logo'
+            tags="AI, PDF, PS, PNG, JPEGS"
+            title='Black Ice Extreme Menthol'
+            url='#'
+            codeURL='#' 
+            />
+        </div>
+    </section>
+    <!-- End Website cards for projects MOBILE -->
+    <!-- End Back-End Dev Projects --> 
 
     <!-- Start "Graphic Design" -->
     <section class="mt-10 mb-10">
