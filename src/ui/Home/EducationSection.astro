@@ -3,11 +3,36 @@ import EducationStats from "../../components/EducationStats.astro"
 ---
 
 <section class="lg:flex mt-10 mb-10">
-    <div class="w-10/12 lg:w-4/12 mx-auto text-center mt-10 pl-6 pr-6 bg-red-100 pt-8 pb-8">
-        <EducationStats school="Centre for Arts and Technology" body="Achieved top of my class in most of the subjects offered in the Graphic and Digital Media Design course. Learn more about my education and background." year="2012" />
+    <div class="w-10/12 lg:w-4/12 mx-auto text-center" id="cato">
+        <div class="pl-6 pr-6 pt-8 pb-8" id="overlay">
+            <EducationStats school="Centre for Arts and Technology" body="Achieved top of my class in most of the subjects offered in the Graphic and Digital Media Design course. Learn more about my education and background." year="2012" />
+        </div>
     </div>
     
-    <div class="w-10/12 lg:w-4/12 mx-auto text-center mt-10 pl-6 pr-6 bg-red-100 pt-8 pb-8">
-        <EducationStats school="University of Calgary" body="Achieved  Front-End Developer and .NET Application Development certificates. Had an average of 97% in my programming courses." year="2022" />
+    <div class="w-10/12 lg:w-4/12 mx-auto text-center" id="uoc">
+        <div class="pl-6 pr-6 pt-8 pb-8" id="overlay">
+            <EducationStats school="University of Calgary" body="Achieved  Front-End Developer and .NET Application Development certificates. Had an average of 97% in my programming courses." year="2022" />
+        </div>
     </div>
 </section>
+
+<style>
+    #cato {
+        background: url("/images/background/CATO.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #uoc {
+        background: url("/images/background/universityOfCalgary.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #overlay{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.9;
+    }
+</style>
