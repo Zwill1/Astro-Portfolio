@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import About from '../ui/Home/About.astro';
 import ProjectCardSection from '../ui/Home/ProjectCardSection.astro';
 import SkillSection from '../ui/Home/SkillSection.astro';
 import EducationSection from '../ui/Home/EducationSection.astro';
@@ -7,7 +8,13 @@ import EducationSection from '../ui/Home/EducationSection.astro';
 
 <Layout title="Home title tag">
 	<main>
+		<About />
 		<ProjectCardSection />
+		<section class="mb-20">
+			<p class="text-center text-1xl italic">
+				See more <a class="font-bold" href="http://localhost:4321/portfolio">projects</a>
+			</p>
+		</section>
 		<section class="bg-[#f4f4f4] pt-5 pb-5 shadow-xl">
 			<SkillSection />
 		</section>
