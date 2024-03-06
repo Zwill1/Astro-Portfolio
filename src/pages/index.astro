@@ -6,19 +6,26 @@ import SkillSection from '../ui/Home/SkillSection.astro';
 import EducationSection from '../ui/Home/EducationSection.astro';
 ---
 
+<!-- colors
+#28808D
+#2D5B63
+#17A2B8
+#233538
+#283233 -->
+
 <Layout title="Home title tag">
 	<main>
 		<About />
-		<ProjectCardSection />
-		<section class="mb-20">
-			<p class="text-center text-1xl italic">
-				See more <a class="font-bold" href="http://localhost:4321/portfolio">projects</a>
-			</p>
-		</section>
-		<section class="bg-[#f4f4f4] pt-5 pb-5 shadow-xl">
+		<section class="bg-[#2D5B63] pt-5 pb-5 shadow-xl">
 			<SkillSection />
 		</section>
-		<section class="mt-20 mb-20">
+		<ProjectCardSection />
+		<section class="w-full xl:w-10/12 mx-auto mb-20">
+			<p class="text-center lg:text-right lg:pr-10 text-1xl italic">
+				See more <a href="http://localhost:4321/portfolio" class="font-bold">projects</a>
+			</p>
+		</section>
+		<section class="pt-2 pb-20 bg-[#f4f4f4]">
 			<div class="mt-10">
 				<h2 class="text-center text-4xl font-bold uppercase">Education</h2>
 			</div>
