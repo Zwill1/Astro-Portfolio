@@ -11,7 +11,7 @@ function Navigation() {
 
   return (
     <>
-<section className="bg-black text-white">
+      <section className="bg-white text-black sticky top-0 z-50 shadow-md">
         <div className="flex justify-between md:w-full h-14 w-10/12 mx-auto container items-center">
           <div>
             <h1 className="flex">
@@ -59,11 +59,11 @@ function Navigation() {
         </div>
         <ul
           className={
-            !nav ? "hidden" : "absolute bg-black w-full lg:hidden z-50"
+            !nav ? "hidden" : "absolute bg-white w-full lg:hidden z-50"
           }
         >
         <>
-            <li className="w-full mx-auto text-center bg-[#333]">
+            <li className="w-full mx-auto text-center bg-[#f4f4f4]">
             <a href="/" class="block pt-4 pb-4" onClick={handleClose}>
                 Home
             </a>
@@ -73,7 +73,7 @@ function Navigation() {
                 Portfolio
             </a>
             </li>
-            <li className="w-full mx-auto text-center bg-[#333]">
+            <li className="w-full mx-auto text-center bg-[#f4f4f4]">
             <a href="/education" class="block pt-4 pb-4" onClick={handleClose}>
                 Education
             </a>
