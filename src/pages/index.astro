@@ -4,6 +4,7 @@ import Hero from '../ui/Home/Hero.astro';
 import ProjectCardSection from '../ui/Home/ProjectCardSection.astro';
 import SkillSection from '../ui/Home/SkillSection.astro';
 import EducationSection from '../ui/Home/EducationSection.astro';
+import Button from '../components/Button';
 ---
 
 <!-- colors
@@ -20,10 +21,14 @@ import EducationSection from '../ui/Home/EducationSection.astro';
 			<SkillSection />
 		</section>
 		<ProjectCardSection />
-		<section class="w-full xl:w-10/12 mx-auto mb-20">
-			<p class="text-center lg:text-right lg:pr-10 text-1xl italic">
-				See more <a href="http://localhost:4321/portfolio" class="font-bold">projects</a>
-			</p>
+		<section class="w-full xl:w-10/12 mx-auto mb-20 lg:flex">
+			<div class="w-full xl:w-10/12"></div>
+			<div class="w-full xl:w-2/12">
+				<Button link="http://localhost:4321/portfolio" name="See more projects" bgColor="bg-[#17A2B8]" width="w-full text-center text-1xl italic" />
+				<!-- <p class="text-center lg:text-right lg:pr-10 text-1xl italic">
+					See more <a href="" class="font-bold">projects</a>
+				</p> -->
+			</div>
 		</section>
 		<section class="pt-2 pb-20 bg-[#f4f4f4]">
 			<div class="mt-10">
