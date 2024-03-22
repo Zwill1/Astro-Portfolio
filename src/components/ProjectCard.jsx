@@ -5,8 +5,8 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
     return (
       <section>
         <img src={image} class="w-full rounded-3xl" alt={imgAlt} />
-        <p class="italic">{tags}</p>
-        <h4 class="text-xl font-bold p-1">{title}</h4>
+        <h4 class="text-xl font-bold pt-1">{title}</h4>
+        <p class="italic pb-1 text-sm">{tags}</p>
         <div class="flex justify-between">
           <Button
             name="No Live Links"
@@ -20,8 +20,8 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
     return (
       <section>
         <img src={image} class="w-full rounded-3xl" alt={imgAlt} />
-        <p class="italic">{tags}</p>
-        <h4 class="text-xl font-bold p-1">{title}</h4>
+        <h4 class="text-xl font-bold pt-1">{title}</h4>
+        <p class="italic pb-1 text-sm">{tags}</p>
         <div class="flex justify-between">
           <Button
             link={codeURL}
@@ -37,8 +37,8 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
     return (
       <section>
         <img src={image} class="w-full rounded-3xl" alt={imgAlt} />
-        <p class="italic">{tags}</p>
-        <h4 class="text-xl font-bold p-1">{title}</h4>
+        <h4 class="text-xl font-bold pt-1">{title}</h4>
+        <p class="italic pb-1 text-sm">{tags}</p>
         <div class="flex justify-between">
           <Button
             link={url}
@@ -54,8 +54,8 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
     return (
       <section>
         <img src={image} class="w-full rounded-3xl" alt={imgAlt} />
-        <p class="italic">{tags}</p>
-        <h4 class="text-xl font-bold p-1">{title}</h4>
+        <h4 class="text-xl font-bold pt-1">{title}</h4>
+        <p class="italic pb-1 text-sm">{tags}</p>
         <div class="flex justify-between">
           <Button
             link={url}
