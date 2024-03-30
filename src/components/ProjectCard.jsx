@@ -4,7 +4,7 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
   if (url == "#" && codeURL == "#") {
     return (
       <section>
-        <img src={image} class="w-full rounded-3xl" alt={imgAlt} />
+        <img src={image} class="w-full border-[#17A2B8] hover:border-[#28808D] border-4" alt={imgAlt} />
         <h4 class="text-xl font-bold pt-1">{title}</h4>
         <p class="italic pb-1 text-sm">{tags}</p>
         <div class="flex justify-between">
@@ -19,7 +19,7 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
   } else if (url == "#") {
     return (
       <section>
-        <img src={image} class="w-full rounded-3xl" alt={imgAlt} />
+        <img src={image} class="w-full border-[#17A2B8] hover:border-[#28808D] border-4" alt={imgAlt} />
         <h4 class="text-xl font-bold pt-1">{title}</h4>
         <p class="italic pb-1 text-sm">{tags}</p>
         <div class="flex justify-between">
@@ -36,7 +36,7 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
   } else if (codeURL == "#") {
     return (
       <section>
-        <img src={image} class="w-full rounded-3xl" alt={imgAlt} />
+        <img src={image} class="w-full border-[#17A2B8] hover:border-[#28808D] border-4" alt={imgAlt} />
         <h4 class="text-xl font-bold pt-1">{title}</h4>
         <p class="italic pb-1 text-sm">{tags}</p>
         <div class="flex justify-between">
@@ -53,7 +53,7 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
   } else {
     return (
       <section>
-        <img src={image} class="w-full rounded-3xl" alt={imgAlt} />
+        <img src={image} class="w-full border-[#17A2B8] hover:border-[#28808D] border-4" alt={imgAlt} />
         <h4 class="text-xl font-bold pt-1">{title}</h4>
         <p class="italic pb-1 text-sm">{tags}</p>
         <div class="flex justify-between">
