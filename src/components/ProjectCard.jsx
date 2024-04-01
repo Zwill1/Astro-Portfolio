@@ -10,7 +10,7 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
         <div class="flex justify-between">
           <Button
             name="No Live Links"
-            bgColor="bg-red-800 text-white italic font-bold"
+            bgColor="bg-red-800 text-white italic font-bold shadow-md hover:shadow-2xl"
             width="w-full"
           />
         </div>
@@ -26,7 +26,7 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
           <Button
             link={codeURL}
             name="GitHub"
-            bgColor="bg-black text-white italic font-bold"
+            bgColor="bg-black text-white italic font-bold shadow-md hover:shadow-2xl"
             width="w-full"
             target="_blank"
           />
@@ -43,7 +43,7 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
           <Button
             link={url}
             name="Live Website"
-            bgColor="bg-green-200 italic font-bold"
+            bgColor="bg-green-200 italic font-bold shadow-md hover:shadow-2xl"
             width="w-full"
             target="_blank"
           />
@@ -60,14 +60,14 @@ function ProjectCard({ image, imgAlt, tags, title, url, codeURL }) {
           <Button
             link={url}
             name="Live Website"
-            bgColor="bg-green-200 italic font-bold"
+            bgColor="bg-green-200 italic font-bold shadow-md hover:shadow-2xl"
             width="w-full"
             target="_blank"
           />
           <Button
             link={codeURL}
             name="GitHub"
-            bgColor="bg-black text-white italic font-bold"
+            bgColor="bg-black text-white italic font-bold shadow-md hover:shadow-2xl"
             width="w-full"
             target="_blank"
           />
