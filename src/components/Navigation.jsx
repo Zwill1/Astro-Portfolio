@@ -23,19 +23,19 @@ function Navigation() {
             </h1>
           </div>
           <div>
-            <ul className="hidden lg:flex pr-4">
+            <ul className="hidden lg:flex pr-4 navigation">
               <>
                 <li className="p-4">
-                  <a href="/">Home</a>
+                  <a href="/" class="hover:text-[#17A2B8]">Home</a>
                 </li>
                 <li className="p-4">
-                  <a href="/portfolio">Portfolio</a>
+                  <a href="/portfolio" class="hover:text-[#17A2B8]">Portfolio</a>
                 </li>
                 <li className="p-4">
-                  <a href="/education">Education</a>
+                  <a href="/education" class="hover:text-[#17A2B8]">Education</a>
                 </li>
                 <li className="p-4">
-                  <a href="/contact">Contact</a>
+                  <a href="/contact" class="hover:text-[#17A2B8]">Contact</a>
                 </li>
               </>
             </ul>
@@ -46,7 +46,7 @@ function Navigation() {
         </div>
         <ul
           className={
-            !nav ? "hidden" : "absolute bg-white w-full lg:hidden z-50"
+            !nav ? "hidden navigation" : "absolute bg-white w-full lg:hidden z-50 navigation"
           }
         >
           <>
