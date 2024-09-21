@@ -1,10 +1,12 @@
 ## Visuals Plus Portfolio Website
 
-This website is to showcase examples of front-end, back-end and Full Stack Development projects.
+This website is to showcase examples of front-end, back-end and Full Stack Development projects on a modern looking website.
 
 ## Goals
 
-Display a list of skills and experiences as a Full Stack Developer.
+- Display a list of skills and experiences as a Full Stack Developer.
+- Include whether the website is live or not
+- Include links to project code if allowed
 
 ## Skills
 
