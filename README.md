@@ -5,8 +5,8 @@ This website is to showcase examples of front-end, back-end and Full Stack Devel
 ## Goals
 
 - Display a list of skills and experiences as a Full Stack Developer.
-- Include whether the website is live or not
-- Include links to project code if allowed
+- Include whether the website is live or not.
+- Include links to project code if allowed.
 
 ## Skills
 
